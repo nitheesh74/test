@@ -1,0 +1,105 @@
+
+<!DOCTYPE = 'html'>
+<html>
+
+<head>
+
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel='stylesheet' href='../css/main.css'>
+    <script src="../js/mydemo.js"></script>
+
+	<title>EV vs PHEV Analysis for WA - Text Input</title>
+
+</head>
+
+<body>
+	<header>
+
+		<!--<div class='headerdiv'>
+			<h2>EV v/s PHEV data Analysis for WA state</h2>
+		</div> -->
+
+	</header>
+    
+	<section>
+		<!--<div class='divwon'>
+			
+			<span class='dot'></span>
+			<span class='dot'></span>
+			<span class='dot'></span>
+
+		</div> -->
+
+		<div class='divtwo'>
+
+			<nav>
+				<a href="../index.html">Home</a>
+				<a href="aboutus.html">About Us</a>
+				<a href="./evdata.html">EVData</a>
+				<a href="./hybridev.html">Plug-In Hybrid</a>
+				<a href="./crud.html">Submit Updates</a>
+				<div class="animation start-home"></div>
+			</nav>	
+
+		</div>
+		<div 
+            class='divthree'>
+		</div>
+
+		<div class='divseven'>
+			<div class='blog1'>
+				<h4>Please submit updates about EV or Plug-In Hybrid EV</h4>
+
+           		<h6>As part of this analysis we encourage authorized users to add/update or delete any new data about 
+                    Battery Electirc Vehicles and Plug-In Hybrid Electric Vehicles.<br>
+                    Submitted data will be reviewed and updated in this stite.
+           		</h6>
+       		</div>
+				
+            <form id="myForm">
+                <!--<title>Radio Button Control</title>
+                <input type="radio" id="batterytype" value="EV">Battery Electric Vehicle
+                <input type="radio" id="batterytype2" value="Hybrid">Plug-In Hybrid Electric Vehicle<br>-->
+                <label for ="cud"> Select the type of operation</label><br>
+                <select id="cud" name="cud">
+                    <option value="none">Select</option>
+                    <option value="add">Add</option>
+                    <option value="upd">Update</option>
+                    <option value="del">Delete</option>
+                </select> <br>
+                <label for ="cars"> Select the type of vehicle</label><br>
+                <select id="cars" name="cars">
+                    <option value="none">Select</option>
+                    <option value="EV">Battery Electric Vehicle</option>
+                    <option value="PHEV">Plug-In Hybrid Electric Vehicle</option>
+                </select>
+                <br>Enter Make of the Car<br>           
+                <input type="text" id="make"><br>
+                Enter Model of the Car<br>           
+                <input type="text" id="model"><br>
+                Total number of cars(Sample Size)<br> 
+                <input type="text" id="samplesize"><br>
+                Electirc Range(Miles/Charge)<br> 
+                <input type="text" id="range"><br>
+                Seating Capacity<br> 
+                <input type="text" id="seats"><br><br>
+                <!--<button type=""submit">submit</button><br> -->
+                <input type="button" id="bt" value ="Submit" onclick= "savefile()"/> <br>     
+            </form>
+
+	</div>
+    <p id="myH">.....</p>
+	</section>
+    
+
+	<footer class='footer'>
+		
+		<div class='divfooter'>
+			<p>
+  			Information on - <span>Battery Electric Vehile and Plug-In HybridEV in WA</span> - Be Informed
+			</p>
+		</div>
+
+	</footer>
+</body>
+</html>
